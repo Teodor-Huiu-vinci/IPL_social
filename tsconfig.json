@@ -1,8 +1,9 @@
 {
-    "complilerOptions" : {
-        "target" : "es2020",
-        "module": "commonjs",
-        "type": [],
+    "compilerOptions" : {
+        "target" : "ES2020",
+        "module": "CommonJS",
+        "lib": ["es2020"],
+        "types": ["jest","node"],
         "sourceMap": true,
         "declaration": true,
         "declarationMap": true,
@@ -10,12 +11,12 @@
         "moduleDetection": "force",
         "rootDir":"./src",
         "outDir" : "./dist",
-        "esMoulesInterop": true,
+        "esModuleInterop": true,
         "skipLibCheck": true,
-        "forceConsistentCasingInFilNames": true,
-        "resolveJsonModules" : true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule" : true,
 
     },
-    "include": ["src/**/*"],
+    "include": ["src/**/*","tests/**/*"],
     "exclude" : ["node_modules","tests","dist"]
 }

@@ -1,11 +1,11 @@
-module.export = {
-    prest: 'ts-jest',
-    testEnvironements: 'node',
-    roots:['<rootDir>/tests'],
+module.exports = {
+    preset: 'ts-jest',
+    testEnvironment: 'node',
+    roots:['<rootDir>/tests', '<rootDir>/src'],
     testMatch:['**/*.test.ts'],
     coverageDirectory: 'coverage',
     coverageReporters: ['text','lcov','html'],
-    collecCoverageForm: [
+    collectCoverageFrom: [
         'src/**/*.ts',
         '!src/**/*.d.ts'
     ],

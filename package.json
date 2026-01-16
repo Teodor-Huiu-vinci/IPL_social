@@ -2,12 +2,13 @@
   "name": "ipl_social",
   "version": "1.0.0",
   "description": "Exam 2026: Email Validation system ",
-  "main": "index.js",
+  "main": "dist/emailValid.js",
+  "types": "dist/emailValid.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build" : "tsc",
-    "test:watch":"jest --watch",
-    "test:coverage" : "jest --coverage"
+    "test": "jest",
+    "build": "tsc",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
