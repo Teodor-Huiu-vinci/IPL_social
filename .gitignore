@@ -1,3 +1,29 @@
 ##Tout ce que git doit ignorer ##
 
 node_modules/
+dist/
+logs/
+
+npm-debug.logs*
+
+coverage/
+*./lcov
+.nyc_output
+
+*.tsbuildinfo
+
+.env
+.env .local
+.env.*.local
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+.DS_STORE
+
+
+build/
+*.log
