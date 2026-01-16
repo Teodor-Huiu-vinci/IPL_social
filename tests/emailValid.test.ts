@@ -20,4 +20,38 @@ describe('EmailValid', () =>{
             expect(result).toBe(true);
         });
     });
+
+    describe('must have a point after @', ()=>{
+        it('must return false if no point after@', ()=>{
+
+            //Arrange
+            const email = 'test@example';
+
+            //act
+            const result = validEmail(email);
+
+            //Assert
+            expect(result).toBe(false);
+        });
+        it('must accept a enmail with . after @',()=>{
+
+            //Arrange
+            const email = 'Test@exampole.com';
+            //Act
+            const result = validEmail(email)
+            //Assert
+            expect(result).toBe(true);
+        });
+
+        it('must reject return false if . is the last caracthere',()=>{
+
+
+            //arrange
+            const email = 'test@eample.';
+            //Act
+            const result = validEmail(email);
+            //Assert
+            expect(result).toBe(false)
+        })
+    });
 });
