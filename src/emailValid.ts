@@ -21,5 +21,10 @@ export function validEmail(email: string): boolean {
     if(email.endsWith('.')){
         return false;
     }
+
+    //test 3: must have no space
+    if(email.includes(' ')){
+        return false;
+    }
     return true;
 }

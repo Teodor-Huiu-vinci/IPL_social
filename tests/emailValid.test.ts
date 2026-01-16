@@ -54,4 +54,24 @@ describe('EmailValid', () =>{
             expect(result).toBe(false)
         })
     });
+    describe ('must have no spaces',()=>{
+        it('must reject email with space',()=>{
+            //Assert
+            const email = 'test @example.com'
+            //Act
+            const result = validEmail(email);
+            //Assert 
+            expect(result).toBe(false);
+        });
+
+        it('must accept email without space',()=>{
+            //Arrange
+            const email = "test@example.com"
+            //act
+            const result = validEmail(email);
+            
+            //Arrange
+            expect(result).toBe(true)
+        })
+    })
 });
