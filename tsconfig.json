@@ -1,0 +1,21 @@
+{
+    "complilerOptions" : {
+        "target" : "es2020",
+        "module": "commonjs",
+        "type": [],
+        "sourceMap": true,
+        "declaration": true,
+        "declarationMap": true,
+        "strict": true,
+        "moduleDetection": "force",
+        "rootDir":"./src",
+        "outDir" : "./dist",
+        "esMoulesInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFilNames": true,
+        "resolveJsonModules" : true,
+
+    },
+    "include": ["src/**/*"],
+    "exclude" : ["node_modules","tests","dist"]
+}

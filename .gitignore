@@ -1,0 +1,3 @@
+##Tout ce que git doit ignorer ##
+
+node_modules/
